@@ -1,0 +1,22 @@
+{
+  "name": "file_sharing_app",
+  "version": "1.0.0",
+  "description": "File sharing app with node express and mongodb",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js -e 'ejs' ",
+    "dev": "nodemon server.js - e 'ejs'"
+  },
+  "keywords": [],
+  "author": "Shashikant Yadav ",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongoose": "^7.5.2",
+    "multer": "^1.4.5-lts.1",
+    "uuid": "^9.0.1"
+  }
+}
