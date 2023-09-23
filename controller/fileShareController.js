@@ -40,7 +40,7 @@ const fileupload = async(req,res)=>{
                      
                          const result =  await fileData.save();
                         //  console.log(result,"nn")
-                            return res.json({file:`${process.env.Host}:${process.env.Port}/api/file/${result.uuid}`});        
+                            return res.json({file:`${process.env.Host}/api/file/${result.uuid}`});        
             })
 
       
@@ -63,7 +63,7 @@ const showFile = async(req,res)=>{
                     uuid:file.uuid,
                     fileName:file.fileName,
                     size:file.size,
-                    downloadLink: `${process.env.Host}:${process.env.Port}/api/file/download/${file.uuid}`
+                    downloadLink: `${process.env.Host}/api/file/download/${file.uuid}`
                });
 
           }catch(error){
